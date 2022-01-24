@@ -10,12 +10,12 @@ public class Calculator {
             System.out.println("Введите пароль");
             String Password = sc.nextLine();
 
-            if (Password.length() < 8 || Password.length() > 15) {
-                System.out.println("Введеный пароль должен содержать от 8 до 15 символов");
+            if (Password.length() < 9 || Password.length() > 15) {
+                System.out.println("Введеный пароль должен содержать от 9 до 15 символов");
                 do {System.out.println("Введите пароль");
                     Password = sc.nextLine();
 
-                } while (Password.length() < 8 || Password.length() > 15);
+                } while (Password.length() < 9 || Password.length() > 15);
                 System.out.println("Введенный вами логин:" + Login + " Введенный вами пароль:" + Password);
             }
 
